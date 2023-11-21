@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+button:hover {
+  background: rgb(109, 57, 12);
+  color: antiquewhite;
+  transition: all 0.5s ease;
+}
+
+button:active {
+  background: rgb(43, 43, 185);
+  color: antiquewhite;
+}
+
+a:visited {
+  color: rgb(0, 119, 128);
+}
+
+h1::before {
+  content: '👉';
+}
+h1::after {
+  content: '👈';
+}
+
+h2::first-letter {
+  color: rgb(0, 119, 128);
+  font-size: 3rem;
+}
+
+p::first-line {
+  color: rgb(82, 13, 13);
+  font-size: 2rem;
+}
+
+table {
+  margin-top: 5rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgb(0, 119, 128);
+}
+
+tr:nth-child(3n) {
+  background: rgb(151, 196, 200);
+}
