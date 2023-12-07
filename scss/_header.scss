@@ -1,0 +1,27 @@
+@use './variables.scss' as *;
+.header {
+  background: $background;
+  color: $textColor;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  .nav {
+    border: 1px solid $textColor;
+    padding: 5px 10px;
+
+    a {
+      color: $textColor;
+      text-decoration: none;
+      margin: 0 10px;
+
+      &:hover {
+        color: rgb(170, 170, 170);
+      }
+
+      &:active {
+        color: rgb(97, 97, 97);
+      }
+    }
+  }
+}

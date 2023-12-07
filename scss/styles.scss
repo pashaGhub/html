@@ -1,0 +1,29 @@
+@use './variables.scss' as *;
+@use './header.scss' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background: $background;
+  padding: 3rem 1rem;
+
+  .title {
+    color: $textColor;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .description {
+    color: rgb(170, 170, 170);
+    font-size: 14px;
+    margin-bottom: 1.1rem;
+  }
+
+  a {
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+  }
+}
