@@ -22,12 +22,12 @@ body {
 @media only screen and (max-width: 600px) {
   body {
     grid-template-areas:
-      'main main main main'
-      'main main main main'
-      'main main main main'
-      'footer footer footer footer'
       'header header header header'
-      'nav nav nav nav';
+      'nav nav nav nav'
+      'main main main main'
+      'main main main main'
+      'main main main main'
+      'footer footer footer footer';
   }
 }
 
