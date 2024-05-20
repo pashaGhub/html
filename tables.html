@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tables</h1>
+    <hr />
+    <h5>Colspan</h5>
+    <table>
+      <tr>
+        <th>item</th>
+        <th>price</th>
+      </tr>
+      <tr>
+        <td>apple</td>
+        <td>1.00</td>
+      </tr>
+      <tr>
+        <td>banana</td>
+        <td>0.50</td>
+      </tr>
+      <tr>
+        <td colspan="2">total</td>
+      </tr>
+    </table>
+
+    <hr />
+    <h5>rowspan</h5>
+    <table>
+      <tr>
+        <th>quantity</th>
+        <th>item</th>
+        <th>price</th>
+      </tr>
+      <tr>
+        <td rowspan="2">2</td>
+        <td>apple</td>
+        <td>1.00</td>
+      </tr>
+      <tr>
+        <td>banana</td>
+        <td>0.50</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>kiwi</td>
+        <td>2.00</td>
+      </tr>
+    </table>
+  </body>
+</html>
