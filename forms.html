@@ -4,45 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      input {
-        display: block;
-        margin-bottom: 2rem;
-      }
-    </style>
   </head>
   <body>
     <h1>Formos</h1>
-    <form>
-      <section>text:</section>
-      <input type="text" />
+    <form action="http://localhost:3002/forms.html">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="vardas"
+        id="name"
+        placeholder="Type your name.."
+        required
+      />
+      <br />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Type your email.."
+      />
 
-      <label for="phone">Phone number:</label>
-      <input type="number" id="phone" placeholder="860000000" />
+      <br />
+      <label for="auto">Select a car:</label>
+      <br />
+      <select name="auto" id="auto">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
 
-      <label for="password">Password</label>
-      <input type="password" id="password" />
+      <br />
+      <label for="message">Write a message</label>
+      <br />
+      <textarea name="message" id="message" rows="10" cols="50"></textarea>
+      <br />
+      <label for="terms">Accept terms</label>
+      <input
+        type="checkbox"
+        name="terms"
+        id="terms"
+        value="selected"
+        required
+      />
+      <br />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" disabled />
+      <p>Do you wannt recieve emails</p>
+      <label for="yes">Yes</label>
+      <input type="radio" name="marketing" id="yes" value="yes" />
+      <label for="no">No</label>
+      <input type="radio" name="marketing" id="no" value="no" />
 
-      <input type="checkbox" name="check" id="" />
+      <br />
 
-      <input type="date" />
-
-      <input type="color" />
-
-      <h3>select your meal</h3>
-      <label for="meat">meat</label>
-      <input type="radio" name="food" id="meat" />
-
-      <label for="vegetables">vegetables</label>
-      <input type="radio" name="food" id="vegetables" />
-
-      <label for="vegetables">nothing</label>
-      <input type="radio" name="food" id="nothing" />
-
-      <input type="button" value="send" />
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
     </form>
   </body>
 </html>
