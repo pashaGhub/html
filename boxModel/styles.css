@@ -1,0 +1,16 @@
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.title {
+  /* margin: 10px; */
+  padding: 10px;
+  background-color: rgb(70, 186, 148);
+  text-align: center;
+}
+
+.first {
+  /* margin-top: 10px; */
+  padding-top: 10px;
+}
