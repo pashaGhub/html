@@ -1,75 +1,55 @@
-/* header styles */
 header {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 1rem;
+
+  background: #333333;
+  padding: 1rem 2rem;
   margin-bottom: 2rem;
-  background: #000000;
-  color: #fff;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 900;
-  letter-spacing: 4px;
-  text-transform: uppercase;
+.navbar-links {
+  display: flex;
+  gap: 1rem;
 }
 
-.nav a {
-  color: #fff;
+.navbar-links a {
+  color: #ffffff;
   text-decoration: none;
-  margin-left: 1rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: all 0.3s;
 }
 
-.nav a:hover {
-  color: #b1b1b1;
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* main styles */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 10px;
+  justify-content: center;
+
+  max-width: 1000px;
+  margin: auto;
 }
 
 /* card styles */
-main {
-  /* flexbox styles */
-  display: flex;
-  flex-wrap: wrap;
-  /* justify-content: space-between; */
-  row-gap: 2rem;
-
-  /* other styles */
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 1rem;
-  padding-right: 0;
-  box-shadow: 0 1px 3px #6ab900, 0 1px 2px #6ab900;
-}
-
 .card {
+  background: #76b900;
   width: 300px;
-  background: #6ab900;
-  color: #000000;
-  padding: 2rem;
-  margin-right: 1rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  height: 200px;
+  padding: 1rem;
 }
 
-.card__title {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: #ffffff;
+.card h2 {
   margin-bottom: 1rem;
-  letter-spacing: 1px;
-  text-transform: capitalize;
+  font-size: 1.5rem;
 }
 
-.card:nth-child(1) {
-  /* flexbox styles */
-  display: flex;
-  width: 600px;
+.card-3 {
+  order: -1;
+  flex-shrink: 2;
 }
 
-.card img {
-  width: 150px;
-  height: auto;
-  margin-right: 1.5rem;
+.card-5 {
+  order: 2;
 }
