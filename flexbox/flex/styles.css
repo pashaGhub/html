@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  background-color: rgb(182, 223, 255);
+  margin-bottom: 2rem;
+}
+
+.item {
+  background-color: rgb(255, 182, 182);
+
+  height: 200px;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.grow:first-of-type {
+  flex-grow: 2;
+}
+
+.shrink {
+  /* flex: 1 1 200px; - short example: grow shrink basis */
+  /* flex: 1; - exual to: flex-grow: 1; flex-shrink: 1; flex-basis: 0; */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px; /* basis veikia pagal pagrindine asi  */
+}
+
+.shrink:first-of-type {
+  flex-shrink: 2;
+}
