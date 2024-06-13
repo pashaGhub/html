@@ -1,0 +1,41 @@
+/* header styles */
+header {
+  background-color: var(--header-bg-color);
+  color: var(--main-text-color);
+  height: var(--header-height);
+  text-align: center;
+  line-height: var(--header-height);
+}
+
+/* main styles */
+.title {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.title h1 {
+  min-width: fit-content;
+  margin-right: 3rem;
+}
+
+.line {
+  background-color: var(--main-text-color);
+  height: 5px;
+  width: 100%;
+}
+
+.par-first {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.par-second {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-size: 1.5rem;
+}
