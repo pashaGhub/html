@@ -1,0 +1,72 @@
+header {
+  background-color: var(--header-bg-color);
+  color: var(--main-text-color);
+  height: var(--header-height);
+  text-align: center;
+  line-height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.burger {
+  display: block;
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    display: block;
+    font-size: 4rem;
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+main {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  padding: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    padding: 20px;
+  }
+}
+
+section {
+  border: 1px solid var(--main-text-color);
+
+  margin-top: 10px;
+  padding: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  section {
+    background-color: rgb(173, 124, 59);
+    margin-top: 20px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  section {
+    background-color: rgb(34, 106, 126);
+    margin-top: 40px;
+    padding: 20px;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
