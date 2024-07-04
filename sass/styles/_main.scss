@@ -1,0 +1,14 @@
+@use './variables' as *;
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  padding: 0 20px;
+  background-color: $primary-bg;
+  color: $primary-color;
+
+  @media screen and (max-width: $mobile-screen) {
+    background-color: blue;
+  }
+}
