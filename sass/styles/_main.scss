@@ -1,4 +1,5 @@
 @use './variables' as *;
+@use './mixins' as *;
 
 .container {
   width: 100%;
@@ -8,7 +9,20 @@
   background-color: $primary-bg;
   color: $primary-color;
 
-  @media screen and (max-width: $mobile-screen) {
-    background-color: blue;
+  @include phone-only {
+    background-color: red;
+  }
+
+  @include tablet-portrait-up {
+    background-color: green;
+  }
+
+  &__intro {
+    @include section-title;
+  }
+
+  &__about {
+    @include section-title;
+    margin-top: 1rem;
   }
 }
