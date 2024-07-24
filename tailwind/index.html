@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: {
+                100: '#f0f9e8',
+                200: '#d9f1c5',
+                300: '#a6e2a0',
+                400: '#5ab759',
+                500: '#1d9d24',
+                600: '#1a7f1b',
+                700: '#1a7f1b',
+                800: '#1a7f1b',
+                900: '#1a7f1b',
+              },
+            },
+            width: {
+              customContainer: '10rem',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <h1
+      class="text-2xl bg-teal-700 w-customContainer font-bold text-clifford-100"
+    >
+      Hello world!
+    </h1>
+    <button
+      class="border border-teal-400 rounded px-2 py-1 hover:bg-teal-400 active:bg-teal-700 active:text-white"
+    >
+      click me
+    </button>
+  </body>
+</html>
